@@ -1,0 +1,35 @@
+.menu{
+    background-color: #e87c13;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+nav a.activo {
+  font-weight: bold;
+  color: #703c09;
+  border-bottom: 2px solid #703c09;
+}
+
+.footer {
+  background-color:#e87c13;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin: 0;
+}

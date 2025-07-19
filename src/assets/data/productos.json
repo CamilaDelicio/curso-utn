@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Notebook BGH ",
+    "descripcion": "Notebook BGH, con procesador Intel i5, 8GB RAM y SSD 256GB.",
+    "precioOriginal": 95000,
+    "precioDescuento": 85000,
+    "imagen": "assets/img/bgh.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Celular Samsung",
+    "descripcion": "Celular Samsung, con cámara dual y batería de larga duración.",
+    "precioOriginal": 50000,
+    "precioDescuento": 45000,
+    "imagen": "assets/img/cel-samsung.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado iluninado Pink",
+    "descripcion": "Teclado mecánico con luces rosadas, iluminación RGB y diseño compacto.",
+    "precioOriginal": 15000,
+    "precioDescuento": 12000,
+    "imagen": "assets/img/teclado.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Monitor Philips 24' Full HD",
+    "descripcion": "Monitor Philips de 24 pulgadas, resolución Full HD, ideal para trabajo y gaming.",
+    "precioOriginal": 40000,
+    "precioDescuento": 35000,
+    "imagen": "assets/img/monitor.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Auriculares Inalámricos",
+    "descripcion": "Auriculares inalámbricos con excelente calidad de sonido.",
+    "precioOriginal": 11000,
+    "precioDescuento": 9000,
+    "imagen": "assets/img/auriculares.jpg"
+  }
+]

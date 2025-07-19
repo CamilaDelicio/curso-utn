@@ -1,0 +1,21 @@
+@if (loading) {
+  <p>Cargando productos...</p>
+} @else {
+  @if (productos.length > 0) {
+    <div class="productos-container">
+      @for (producto of productos; track producto.id) {
+        <div class="producto-card">
+          <img [src]="producto.imagen" alt="{{ producto.nombre }}" />
+          <h3>{{ producto.nombre }}</h3>
+          <p>{{ producto.descripcion }}</p>
+          <p class="precio-original">${{ producto.precioOriginal }}</p>
+          <p class="precio-descuento">${{ producto.precioDescuento }}</p>
+        <button [routerLink]="['/producto', producto.id]">Ver más</button>
+        </div>
+
+      }
+    </div>
+  } @else {
+    <p>No hay productos disponibles.</p>
+  }
+}

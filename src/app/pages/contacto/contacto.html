@@ -1,1 +1,66 @@
-<p>contacto works!</p>
+<section class="contacto">
+  <h2>Contacto</h2>
+  <p>Dudas y sugerencias</p>
+
+  <form class="formulario" (submit)="enviarFormulario()">
+    
+    <input
+      type="text"
+      name="nombre"
+      placeholder="Nombre"
+      required
+      minlength="4"
+      maxlength="8"
+      [(ngModel)]="estado_formulario.nombre"
+      #nombre="ngModel"
+    />
+    @if (nombre.dirty && nombre.invalid){
+        <span style="color: brown;">Eñ nombre debe tener entre 4 y 8 caracteres</span>
+    }
+    @if (nombre.touched && nombre.valid) {
+    <span>✅</span>
+}
+    <input
+      type="email"
+      name="email"
+      placeholder="Correo electrónico"
+      required
+      email
+      [(ngModel)]="estado_formulario.email"
+      #email="ngModel"
+    />
+    @if (email.dirty && email.invalid) {
+  <span style="color: brown;">Ingresá un email válido.</span>
+}
+
+@if (email.touched && email.valid) {
+  <span>✅</span>
+}   
+<textarea
+      name="mensaje"
+      placeholder="Escribí tu mensaje..."
+      required
+      minlength="15"
+      [(ngModel)]="estado_formulario.mensaje"
+      #mensaje="ngModel"
+    ></textarea>
+    @if(mensaje.dirty && mensaje.invalid){
+        <span style="color: brown;">👀Mensaje debe contener al menos 15 caracteres</span>
+    }
+    @if(mensaje.touched && mensaje.valid){
+        <span>✅</span>
+    }
+    <button type="submit">Enviar</button>
+  </form>
+   <div class="consultas-enviadas">
+    <h1>Nuestras consultas</h1>
+    @for (consulta of consultas; track consulta.nombre) {
+      <div class="consulta">
+        <h4>{{ consulta.nombre }} ha comentado:</h4>
+        <h5>{{ consulta.email }}</h5>
+        <p>{{ consulta.mensaje }}</p>
+      </div>
+    }
+  </div>
+</section>
+

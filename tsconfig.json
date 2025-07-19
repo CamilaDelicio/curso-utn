@@ -1,5 +1,8 @@
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+/* Es el archivo mas iportante en ts, porque define como ser la compilación de ts a js: 
+ts: archivos que son .ts no se ejecutan en el navegador, entonces se compila en js para que se ejecute en el navegador
+ts compila js a traves de este archivo*/
 {
   "compileOnSave": false,
   "compilerOptions": {
